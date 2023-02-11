@@ -1,0 +1,180 @@
+body{
+    margin: 0;
+    background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+    }
+
+.night{
+    position: relative;
+    height: 94vh;
+    width: 90vw;
+    margin: 3vh auto;
+    background-image: url(./images/Img_1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 1px 2px 60px rgba(0, 0,0,0.4);
+    
+    
+   
+}
+
+.road1,.road2,.road3,.road4,.road5,.road6{
+    position: absolute;
+    width: 100%;
+    height: 135px;
+    background-image: url(./images/Img_02.png);
+    display: block;
+    position: absolute;
+    left: 0;
+}
+
+.road1{bottom: 0;}
+.road2{bottom: 16%;}
+.road3{bottom: 33%;}
+.road4{bottom: 49%;}
+.road5{bottom: 66%;}
+.road6{bottom: 83%;}
+
+.car1{
+    position: absolute;
+    bottom: 5%;
+    animation-name: move1;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+
+.car2{
+    position: absolute;
+    bottom: 21%;
+    animation-name: move2;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-delay: 5s;
+    right: 0;
+}
+
+.car3{
+    position: absolute;
+    bottom: 38%;
+    animation-name: move1;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-delay: 8s;
+}
+
+.car4{
+    position: absolute;
+    bottom: 54%;
+    animation-name: move2;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-delay: 11s;
+    right: 0;
+}
+
+.car5{
+    position: absolute;
+    bottom: 71%;
+    animation-name: move1;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-delay: 14s;
+}
+
+.car6{
+    position: absolute;
+    bottom: 88%;
+    animation-name: move2;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-delay: 17s;
+    right: 0;
+}
+
+
+@keyframes move1{
+    0%{left: 0%;}
+    10%{transform: translateY(2px);}
+    20%{transform: translateY(-1px);}
+    30%{transform: translateY(2px);}
+    40%{transform: translateY(-1px);}
+    50%{transform: translateY(2px);}
+    60%{transform: translateY(-1px);}
+    70%{transform: translateY(2px);}
+    80%{transform: translateY(-1px);}
+    90%{transform: translateY(2px);}
+    100%{ left: 88%;}
+}
+
+@keyframes move2{
+    0%{right: 0%; }
+    10%{transform: translateY(2px);}
+    20%{transform: translateY(-1px);}
+    30%{transform: translateY(2px);}
+    40%{transform: translateY(-1px);}
+    50%{transform: translateY(2px);}
+    60%{transform: translateY(-1px);}
+    70%{transform: translateY(2px);}
+    80%{transform: translateY(-1px);}
+    90%{transform: translateY(2px);}
+    100%{ right: 88%;}
+}
+
+
+
+.end{
+    position: absolute;
+    color: white;
+    font:70px bold ;
+    left: 50%;
+    top: 40%;
+    transform:translate(-50%,-50%);
+    text-shadow:5px 5px 10px #ff0000;
+    opacity: 0;
+    animation: end 1s;
+    animation-delay: 20s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 2;
+}
+
+@keyframes end{
+    0%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+
+}
+
+.start{
+    position: absolute;
+    color: white;
+    font:70px bold ;
+    left: 50%;
+    top: 40%;
+    transform:translate(-50%,-50%);
+    text-shadow:5px 5px 10px #ff0000;
+    opacity: 0;
+    animation: start 1s;
+    animation-iteration-count: 2;
+}
+
+@keyframes start{
+    0%{opacity: 0;}
+    50%{opacity: 1;}
+    100%{opacity: 0;}
+
+}
+
+
+
+
+
+
